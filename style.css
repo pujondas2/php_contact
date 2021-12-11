@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 16px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+    /*border: 1px solid green;
+    */
+    -webkit-text-fill-color: #fff;
+    /*-webkit-box-shadow: 0 0 0px 1000px #000 inset;
+    */
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-transition: background-color 5000s ease-in-out 0s;
+    -moz-transition: background-color 5000s ease-in-out 0s;
+    -ms-transition: background-color 5000s ease-in-out 0s;
+    -o-transition: background-color 5000s ease-in-out 0s;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+#contact-section {
+    padding-top: 100px;
+    background: #3E3E3E;
+    height: 100vh;
+}
+
+.contact::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.contact-title {
+    width: 50%;
+    float: left;
+}
+
+.contact-form {
+    width: 50%;
+    float: left;
+}
+
+.contact-title h2 {
+    font-size: 38px;
+    text-transform: uppercase;
+    color: #EA236E;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.contact-title h2::after {
+    content: '';
+    background: #EA236E;
+    height: 5px;
+    width: 70px;
+    position: absolute;
+    left: 0;
+    top: 60px;
+}
+
+.single-form input,
+.single-form textarea {
+    display: block;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #a8a8a8;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 10px 10px 0;
+}
+
+.single-form {
+    margin-top: 15px;
+}
+
+.contact-form .single-form:first-child {
+    margin-top: 0;
+}
+
+.single-form input[type="submit"],
+.single-form input[type="reset"] {
+    width: 60px;
+    color: #EB426B;
+    border: 0;
+    float: right;
+    margin-left: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.single-form span {
+    color: #EB426B;
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
